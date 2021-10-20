@@ -1,3 +1,4 @@
+import 'package:Hacktoberfest/views/widgets/text.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatefulWidget {
@@ -27,9 +28,7 @@ class _AppState extends State<App> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
+            textWidget("Vous avez clicker: "),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
